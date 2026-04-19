@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+	<h1>Мой магазин</h1>
+	<nav>
+		<a href="#products">Товары</a>
+		<a href="#cart">Корзина</a>
+		<a href="#contacts">Контакты</a>
+	</nav>
+    </header>
+
+    <main>
+	<section id="hero">
+	    <h2>Добро пожаловать в магазин</h2>
+            <p>Здесь будут наши лучшие товары.</p>
+	</section>
+	
+	<section id="products">
+	    <h2>Товары</h2>
+	    <div class="products-grid">
+	    	<article class="product-card">
+		    <img
+			src="https://picsum.photos/300/200?random=1"
+			alt="Наушники"
+			width="300"
+			height="200"
+			loading="lazy"
+		    >
+
+
+		    <h3>Наушники</h3>
+		    <p class="price">4 900 rub.</p>
+		    <p>Удобные беспроводные наушники для музыки и работы.</p>
+		    <button>Купить</button>
+		</article>
+
+		<article class="product-card">
+	            <img 
+       		   	 src="https://picsum.photos/300/200?random=2" 
+       		   	 alt="Клавиатура" 
+       		   	 width="300" 
+       		   	 height="200" 
+       		   	 loading="lazy"
+       		    >
+     		    <h3>Клавиатура</h3>
+     		    <p class="price">3 490 ₽</p>
+     		    <p>Компактная клавиатура для дома, офиса и учёбы.</p>
+     		    <button>Купить</button>
+   		 </article>
+
+          	 <article class="product-card">
+     		     <img 
+       		    	 src="https://picsum.photos/300/200?random=3" 
+       		    	 alt="Мышь" 
+       		    	 width="300" 
+      	 	    	 height="200" 
+       		    	 loading="lazy"
+      		     >
+     		     <h3>Мышь</h3>
+     		     <p class="price">1 990 ₽</p>
+     		     <p>Лёгкая и удобная мышь с точным сенсором.</p>
+     		     <button>Купить</button>
+   		 </article>
+
+	    </div>
+	</section>
+
+	<section id="cart">
+      	    <h2>Корзина</h2>
+            <p>Пока пусто</p>
+    	</section>
+
+
+    </main>
+
+    <footer id="contacts">
+    	<p>Контакты магазина</p>
+    </footer>
+
+</body>

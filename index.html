@@ -17,71 +17,69 @@
     </header>
 
     <main>
-	<section id="hero">
-	    <h2>Добро пожаловать в магазин</h2>
+		<section id="hero">
+	    	<h2>Добро пожаловать в магазин</h2>
             <p>Здесь будут наши лучшие товары.</p>
-	</section>
+		</section>
 	
-	<section id="products">
-	    <h2>Товары</h2>
-	    <div class="products-grid">
-	    	<article class="product-card">
-		    <img
-			src="https://picsum.photos/300/200?random=1"
-			alt="Наушники"
-			width="300"
-			height="200"
-			loading="lazy"
-		    >
+		<section id="products">
+	    	<h2>Товары</h2>
+	    	<div class="products-grid">
+	    		<article class="product-card">
+		    		<img
+					src="https://picsum.photos/300/200?random=1"
+					alt="Наушники"
+					width="300"
+					height="200"
+					loading="lazy"
+		    		>
+		    		<h3>Наушники</h3>
+		    		<p class="price">4 900 rub.</p>
+		    		<p>Удобные беспроводные наушники для музыки и работы.</p>
+		    		<button class="buy-btn" data-name="Наушники" data-price="4900">Купить</button>
+				</article>
 
+				<article class="product-card">
+	            	<img 
+       		   	 	src="https://picsum.photos/300/200?random=2" 
+       		   	 	alt="Клавиатура" 
+       		   	 	width="300" 
+       		   	 	height="200" 
+       		   	 	loading="lazy"
+       		    	>
+     		    	<h3>Клавиатура</h3>
+     		    	<p class="price">3 490 ₽</p>
+     		    	<p>Компактная клавиатура для дома, офиса и учёбы.</p>
+     		    	<button class="buy-btn" data-name="Клавиатура" data-price="3490">Купить</button>
+   		 		</article>
 
-		    <h3>Наушники</h3>
-		    <p class="price">4 900 rub.</p>
-		    <p>Удобные беспроводные наушники для музыки и работы.</p>
-		    <button>Купить</button>
-		</article>
+          	 	<article class="product-card">
+     		    	<img 
+       		    	src="https://picsum.photos/300/200?random=3" 
+       		    	alt="Мышь" 
+       		    	width="300" 
+      	 	    	height="200" 
+       		    	loading="lazy"
+      		    	>
+					<h3>Мышь</h3>
+     		     	<p class="price">1 990 ₽</p>
+     		     	<p>Лёгкая и удобная мышь с точным сенсором.</p>
+     		     	<button class="buy-btn" data-name="Мышь" data-price="1990">Купить</button>
+   		 		</article>
+	    	</div>
+		</section>
 
-		<article class="product-card">
-	            <img 
-       		   	 src="https://picsum.photos/300/200?random=2" 
-       		   	 alt="Клавиатура" 
-       		   	 width="300" 
-       		   	 height="200" 
-       		   	 loading="lazy"
-       		    >
-     		    <h3>Клавиатура</h3>
-     		    <p class="price">3 490 ₽</p>
-     		    <p>Компактная клавиатура для дома, офиса и учёбы.</p>
-     		    <button>Купить</button>
-   		 </article>
-
-          	 <article class="product-card">
-     		     <img 
-       		    	 src="https://picsum.photos/300/200?random=3" 
-       		    	 alt="Мышь" 
-       		    	 width="300" 
-      	 	    	 height="200" 
-       		    	 loading="lazy"
-      		     >
-     		     <h3>Мышь</h3>
-     		     <p class="price">1 990 ₽</p>
-     		     <p>Лёгкая и удобная мышь с точным сенсором.</p>
-     		     <button>Купить</button>
-   		 </article>
-
-	    </div>
-	</section>
-
-	<section id="cart">
-      	    <h2>Корзина</h2>
-            <p>Пока пусто</p>
+		<section id="cart">
+      		<h2>Корзина</h2>
+        	<p>Товаров в корзине: <span id="cart-count">0</span></p>
+			<p>Общая стоимость: <span id="cart-total">0</span> ₽</p>
+			<ul id="cart-items">
+			</ul>
     	</section>
-
-
-    </main>
+	</main>
 
     <footer id="contacts">
     	<p>Контакты магазина</p>
     </footer>
-
+	<script defer src="js/script.js"></script>
 </body>

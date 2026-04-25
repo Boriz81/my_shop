@@ -48,6 +48,15 @@
         margin-bottom: 20px;
     }
 
+    #cart ul {
+        margin-top: 15px;
+        padding-left: 20px;
+    }
+
+    #cart li {
+        margin-bottom: 8px;
+    }
+
     .products-gird {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -116,7 +125,7 @@
 
     button {
 	background: #0a7cff;
-	color: red;
+	color: white;
 	border: none;
 	padding: 10px 16px;
 	border-radius: 8px;

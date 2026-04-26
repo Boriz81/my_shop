@@ -57,6 +57,44 @@
         margin-bottom: 8px;
     }
 
+    .site-header {
+        background: #222;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .header-cart {
+        background: #0a7cff;
+        padding: 10px 14px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    #clear-cart-btn {
+        margin-top: 15px;
+        background: #ff4d4f;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    #clear-cart-btn:active,
+    .product-card button:active {
+        transform: scale(0.98);
+    }
+
     .products-gird {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-	<h1>Мой магазин</h1>
-	<nav>
-		<a href="#products">Товары</a>
-		<a href="#cart">Корзина</a>
-		<a href="#contacts">Контакты</a>
-	</nav>
+    <header class="site-header"> 
+		<div class="logo">MyShop</div>
+		<nav>
+			<a href="#products">Товары</a>
+			<a href="#cart">Корзина</a>
+			<a href="#contacts">Контакты</a>
+		</nav>
+		<div class="header-cart">
+			<span>Корзина: <strong id="header-cart-count">0</strong></span>
+			<button id="clear-cart-btn" type="button">Очистить корзину</button>
+		</div>
     </header>
 
     <main>
@@ -70,7 +74,7 @@
 		</section>
 
 		<section id="cart">
-      		<h2>Корзинка</h2>
+      		<h2>Корзина</h2>
         	<p>Товаров в корзине: <span id="cart-count">0</span></p>
 			<p>Общая стоимость: <span id="cart-total">0</span> ₽</p>
 			<ul id="cart-items">

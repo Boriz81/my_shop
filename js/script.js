@@ -1,13 +1,16 @@
 console.log('JS подключен');
 const buttons = document.querySelectorAll('.buy-btn'); 
 const cartCount = document.querySelector('#cart-count');
+const headerCartCount = document.querySelector('#header-cart-count');
 const cartTotal = document.querySelector('#cart-total');
 const cartItems = document.querySelector('#cart-items');
+const clearCartBtn = document.querySelector('#clear-cart-btn');
 
 const cart = [];
 
 function renderCart() {
     cartCount.textContent = cart.length;
+    headerCartCount.textContent = cart.length;
     
     let total = 0;
     cartItems.innerHTML = '';
@@ -34,7 +37,13 @@ buttons.forEach(function(button) {
         });
 
         cartCount.textContent = cart.length;
+        headerCartCount.textContent = cart.length;
 
         renderCart();
     });
+});
+
+clearCartBtn.addEventListener('click', function() {
+    cart.length = 0; 
+    renderCart();
 });

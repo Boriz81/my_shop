@@ -8,6 +8,32 @@ const clearCartBtn = document.querySelector('#clear-cart-btn');
 
 const cart = [];
 
+const products = [
+    {
+        id: 1,
+        name: "Наушники",
+        price: 4900,
+        description: "Удобные беспроводные наушники для музыки и работы.",
+        image: "https://picsum.photos/300/200?random=1"
+    },
+    {
+        id: 2,
+        name: "Клавиатура",
+        price: 2500,
+        description: "Механическая клавиатура с подсветкой.",
+        image: "https://picsum.photos/300/200?random=2"
+    },
+    {
+        id: 3,
+        name: "Мышь",
+        price: 1500,
+        description: "Эргономичная мышь с высокой точностью.",
+        image: "https://picsum.photos/300/200?random=3"
+    }
+];
+
+loadCartFromLocalStorage(); // Загружаем корзину при загрузке страницы
+
 function renderCart() {
     // Считаем общее количество товаров (сумма quantity)
     let totalItems = 0;
@@ -44,6 +70,7 @@ function renderCart() {
     });
     
     cartTotal.textContent = total;
+    saveCartToLocalStorage(); // Сохраняем корзину при каждом обновлении
 }
 
 // Добавление товара по кнопке "Купить"
@@ -68,3 +95,17 @@ clearCartBtn.addEventListener('click', function() {
     cart.length = 0; 
     renderCart();
 });
+
+// Сохраняем корзину в localStorage при изменении
+function saveCartToLocalStorage() {
+    localStorage.setItem('myShopCart', JSON.stringify(cart));
+}
+function loadCartFromLocalStorage() {
+    const savedCart = localStorage.getItem('myShopCart');
+    if (savedCart) {
+        const loadedCart = JSON.parse(savedCart);
+        cart.length = 0; // Очищаем текущую корзину
+        loadedCart.forEach(item => cart.push(item));
+        renderCart();
+    }
+}
